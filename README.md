@@ -18,14 +18,15 @@ public class Startup
       		var serviceProvider = services.BuildServiceProvider();
 		maintenance = new MaintenanceService(serviceProvider, timeout_in_ms);
 		maintenance.Add<IService>();
-  }
+  	}
 
-  public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-  {
-    ...
-    // Finish the initiating
-    ...
-    
-    maintenance.Start();
-  }
+	public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+  	{
+    	...
+    	// Finish the initiating
+    	...
+	
+	maintenance.Start();
+  	}
+}	
 ```
