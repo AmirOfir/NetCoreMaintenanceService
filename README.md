@@ -4,7 +4,7 @@ A simple service to add and run maintenance tasks on a background thread
 
 Add to startup.cs:
 
-'''
+```
 
 public class Startup
 {
@@ -28,4 +28,4 @@ public class Startup
     
     maintenance.Start();
   }
-'''
+```
